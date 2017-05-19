@@ -5,7 +5,6 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
-
 @Entity
 @Table(name="shows")
 @Getter
@@ -14,6 +13,7 @@ public class Show {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
+
     String name;
 
 }

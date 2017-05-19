@@ -1,12 +1,13 @@
 package com.example.shows;
+
 import org.springframework.util.Assert;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import java.util.ArrayList;
 import java.util.List;
-
 @RestController
 @RequestMapping("/shows")
 public class ShowsController {
@@ -22,6 +23,7 @@ public class ShowsController {
     @RequestMapping("")
     public List<Show> getShows()
     {
+
         List<Show> allShows = new ArrayList<Show>();
         return (List<Show>) this.ShowRepo.findAll();
     }
@@ -31,5 +33,6 @@ public class ShowsController {
     {
         System.out.println(show.toString());
         return this.ShowRepo.save(show);
+
     }
 }
