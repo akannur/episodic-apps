@@ -5,7 +5,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import java.util.Date;
+import java.time.LocalDateTime;
 
 @JsonTypeName("play")
 @Getter
@@ -15,7 +15,7 @@ public class PlayEvent extends Event {
 
     private Data data;
 
-    public PlayEvent(Long userId, Long showId, Long episodeId, Date createdAt, Data data) {
+    public PlayEvent(Long userId, Long showId, Long episodeId, LocalDateTime createdAt, Data data) {
 
         super(userId, showId, episodeId, createdAt);
         this.data=data;

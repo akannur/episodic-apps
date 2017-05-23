@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/episodic-events.iml" filepath="$PROJECT_DIR$/.idea/modules/episodic-events.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/episodic-events_main.iml" filepath="$PROJECT_DIR$/.idea/modules/episodic-events_main.iml" group="episodic-events" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/episodic-events_test.iml" filepath="$PROJECT_DIR$/.idea/modules/episodic-events_test.iml" group="episodic-events" />
     </modules>
   </component>
 </project>
